@@ -3,8 +3,10 @@
 
 int main(int argc, char const *argv[])
 {
-    Auth *auth = new Auth();
-    auth->Register();
-    /* code */
+    // TODO: get credentials from command line
+    Auth *auth = new Auth("john", "foobarbaz");
+    // EXISTING USER HAPPY PATH
+    auth->Login();
+
     return 0;
 }

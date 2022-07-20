@@ -8,7 +8,7 @@ private:
     std::string password;
 
 public:
-    Auth();
+    Auth(std::string username, std::string password);
     void Register();
     void Login();
 };
