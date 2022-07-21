@@ -1,8 +1,27 @@
 #include "Name.h"
 #include <string>
-Name::Name(std::string first, std::string middle, std::string last)
+Name::Name(std::string first, std::string last)
 {
     this->first = first;
-    this->middle = middle;
     this->last = last;
 };
+
+void Name::setTitle(std::string title)
+{
+    this->title = title;
+}
+
+void Name::setMiddle(std::string middle)
+{
+    this->middle = middle;
+}
+
+std::string Name::getTitle()
+{
+    return this->title;
+}
+
+std::string Name::getMiddle()
+{
+    return this->middle;
+}

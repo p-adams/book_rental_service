@@ -9,6 +9,11 @@ private:
     std::vector<Contributor> authors;
     std::vector<Contributor> translators;
     std::vector<Contributor> editors;
+    std::string title;
+    std::string edition;
+    std::string pub_date;
+    std::string publisher;
+    int pagination;
 
 public:
     Book();

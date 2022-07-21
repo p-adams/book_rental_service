@@ -5,12 +5,17 @@
 class Name
 {
 private:
+    std::string title;
     std::string first;
     std::string middle;
     std::string last;
 
 public:
-    Name(std::string first, std::string middle, std::string last);
+    Name(std::string first, std::string last);
+    void setTitle(std::string);
+    void setMiddle(std::string);
+    std::string getTitle();
+    std::string getMiddle();
 };
 
 #endif
