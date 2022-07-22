@@ -1,5 +1,6 @@
 #include <string>
 #include "Auth.h"
+#include "json.hpp"
 
 int main(int argc, char const *argv[])
 {
