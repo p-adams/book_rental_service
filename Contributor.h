@@ -10,8 +10,8 @@ private:
 public:
     Contributor();
     ~Contributor();
-    void setName(Name *name);
-    Name *getName();
+    void set_name(Name *name);
+    Name *get_name();
 };
 
 #endif

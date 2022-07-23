@@ -6,22 +6,22 @@ Name::Name(std::string first, std::string last)
     this->last = last;
 };
 
-void Name::setTitle(std::string title)
+void Name::set_title(std::string title)
 {
     this->title = title;
 }
 
-void Name::setMiddle(std::string middle)
+void Name::set_middle(std::string middle)
 {
     this->middle = middle;
 }
 
-std::string Name::getTitle()
+std::string Name::get_title()
 {
     return this->title;
 }
 
-std::string Name::getMiddle()
+std::string Name::get_middle()
 {
     return this->middle;
 }

@@ -13,10 +13,10 @@ private:
 public:
     Name(std::string first, std::string last);
     ~Name();
-    void setTitle(std::string);
-    void setMiddle(std::string);
-    std::string getTitle();
-    std::string getMiddle();
+    void set_title(std::string);
+    void set_middle(std::string);
+    std::string get_title();
+    std::string get_middle();
 };
 
 #endif

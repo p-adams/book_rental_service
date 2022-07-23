@@ -2,9 +2,9 @@
 
 Contributor::Contributor(){};
 
-void Contributor::setName(Name *name){};
+void Contributor::set_name(Name *name){};
 
-Name *Contributor::getName()
+Name *Contributor::get_name()
 {
     return this->name;
 };
