@@ -8,9 +8,11 @@ private:
     std::string password;
 
 public:
-    Auth(std::string username, std::string password);
-    void Register();
-    void Login();
+    Auth();
+    ~Auth();
+    void check_status(std::string username, std::string password);
+    void register_new();
+    void login();
 };
 
 #endif

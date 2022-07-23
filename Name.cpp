@@ -25,3 +25,5 @@ std::string Name::getMiddle()
 {
     return this->middle;
 }
+
+Name::~Name() {}

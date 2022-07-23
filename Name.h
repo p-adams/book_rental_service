@@ -12,6 +12,7 @@ private:
 
 public:
     Name(std::string first, std::string last);
+    ~Name();
     void setTitle(std::string);
     void setMiddle(std::string);
     std::string getTitle();

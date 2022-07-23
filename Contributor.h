@@ -9,6 +9,7 @@ private:
 
 public:
     Contributor();
+    ~Contributor();
     void setName(Name *name);
     Name *getName();
 };

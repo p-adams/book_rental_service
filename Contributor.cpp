@@ -8,3 +8,5 @@ Name *Contributor::getName()
 {
     return this->name;
 };
+
+Contributor::~Contributor() {}

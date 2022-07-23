@@ -4,7 +4,8 @@ project(book_rental_service VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(book_rental_service main.cpp Auth.cpp Book.cpp Contributor.cpp Name.cpp)
+add_executable(book_rental_service main.cpp Auth.cpp Book.cpp Contributor.cpp Name.cpp BookInventory.cpp)
+
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

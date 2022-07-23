@@ -58,3 +58,5 @@ int Book::get_pagination()
 {
     return this->pagination;
 }
+
+Book::~Book() {}

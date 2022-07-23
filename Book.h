@@ -24,6 +24,7 @@ public:
          std::string pub_date,
          std::string publisher,
          int pagination);
+    ~Book();
     std::vector<Contributor> get_authors();
     std::vector<Contributor> get_translators();
     std::vector<Contributor> get_editors();
