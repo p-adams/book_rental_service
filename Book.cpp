@@ -54,6 +54,11 @@ std::string Book::get_publisher()
     return this->publisher;
 }
 
+std::string Book::get_format()
+{
+    return this->format;
+}
+
 int Book::get_pagination()
 {
     return this->pagination;

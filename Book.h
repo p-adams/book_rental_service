@@ -13,6 +13,7 @@ private:
     std::string edition;
     std::string pub_date;
     std::string publisher;
+    std::string format;
     int pagination;
 
 public:
@@ -32,6 +33,7 @@ public:
     std::string get_edition();
     std::string get_pub_date();
     std::string get_publisher();
+    std::string get_format();
     int get_pagination();
 };
 
