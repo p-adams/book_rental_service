@@ -74,6 +74,9 @@
     "numeric": "cpp",
     "ranges": "cpp",
     "stack": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "memory_resource": "cpp",
+    "filesystem": "cpp",
+    "version": "cpp"
   }
 }

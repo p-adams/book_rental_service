@@ -14,6 +14,7 @@ Book::Book(std::vector<Contributor> authors,
     this->editors = editors;
     this->title = title;
     this->edition = edition;
+    // TODO: change to date string
     this->pub_date = pub_date;
     this->publisher = publisher;
     this->pagination = pagination;

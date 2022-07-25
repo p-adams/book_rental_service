@@ -9,7 +9,7 @@ private:
     std::vector<Book> books;
 
 public:
-    BookInventory();
+    BookInventory(std::vector<Book> books);
     ~BookInventory();
 };
 

@@ -1,15 +1,15 @@
 {
   "books": [
     {
-      "title": "",
-      "authors": [],
+      "title": "To Kill a Mockingbird",
+      "authors": [{ "name": { "first": "Harper", "last": "Lee" } }],
       "translators": [],
       "editors": [],
       "edition": "",
-      "pub_date": "",
-      "publisher": "",
-      "format": "",
-      "pagination": 0
+      "pub_date": "May 23rd 2006",
+      "publisher": "Harper Perennial Modern Classics",
+      "format": "paperback",
+      "pagination": 336
     }
   ]
 }

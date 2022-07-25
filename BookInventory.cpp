@@ -1,7 +1,8 @@
 #include "BookInventory.h"
-
-BookInventory::BookInventory()
+#include <vector>
+BookInventory::BookInventory(std::vector<Book> books)
 {
+    this->books = books;
 }
 
 BookInventory::~BookInventory()
