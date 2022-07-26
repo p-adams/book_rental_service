@@ -8,7 +8,7 @@ BookInventoryCoordinator::BookInventoryCoordinator(){};
 
 void BookInventoryCoordinator::seed_inventory()
 {
-    std::ifstream f("books.json");
+    std::ifstream f("../books.json");
 
     json data = json::parse(f);
     std::cout << data << std::endl;
