@@ -77,6 +77,7 @@
     "valarray": "cpp",
     "memory_resource": "cpp",
     "filesystem": "cpp",
-    "version": "cpp"
+    "version": "cpp",
+    "fstream": "cpp"
   }
 }

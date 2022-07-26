@@ -9,17 +9,34 @@ BookInventoryCoordinator::BookInventoryCoordinator(){};
 
 namespace ns
 {
-    struct BookData
+    class book
     {
-        std::vector<Contributor> authors;
-        std::vector<Contributor> translators;
-        std::vector<Contributor> editors;
+    private:
+        std::vector<std::string> authors;
+        std::vector<std::string> translators;
+        std::vector<std::string> editors;
         std::string title;
         std::string edition;
         std::string pub_date;
         std::string publisher;
         std::string format;
         int pagination;
+
+    public:
+        book() = default;
+        book(std::vector<std::string> authors,
+             std::vector<std::string> translators,
+             std::vector<std::string> editors,
+             std::string title,
+             std::string edition,
+             std::string pub_date,
+             std::string publisher,
+             std::string format,
+             int pagination) : authors(std::move(authors)), translators(std::move(translators)), editors(std::move(editors)), title(std::move(title)), edition(std::move(edition)), pub_date(std::move(pub_date)), publisher(std::move(publisher)), format(std::move(format)), pagination(std::move(pagination))
+
+        {
+        }
+        NLOHMANN_DEFINE_TYPE_INTRUSIVE(book, authors, translators, editors, title, edition, pub_date, publisher, format, pagination)
     };
 
 };
