@@ -2,6 +2,13 @@
 #include <iostream>
 #include <string>
 
+enum AuthType
+{
+    admin,
+    user,
+    guest
+};
+
 Auth::Auth()
 {
 }

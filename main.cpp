@@ -11,7 +11,6 @@ int main(int argc, char const *argv[])
     // Auth *auth = new Auth();
     // EXISTING USER HAPPY PATH
     // auth->login();
-    std::cout << "meow" << std::endl;
 
     return 0;
 }

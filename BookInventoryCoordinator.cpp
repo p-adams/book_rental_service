@@ -7,16 +7,21 @@ using namespace nlohmann;
 
 BookInventoryCoordinator::BookInventoryCoordinator(){};
 
-struct BookData
+namespace ns
 {
-    std::vector<Contributor> authors;
-    std::vector<Contributor> translators;
-    std::vector<Contributor> editors;
-    std::string title;
-    std::string edition;
-    std::string pub_date;
-    std::string publisher;
-    std::string format;
+    struct BookData
+    {
+        std::vector<Contributor> authors;
+        std::vector<Contributor> translators;
+        std::vector<Contributor> editors;
+        std::string title;
+        std::string edition;
+        std::string pub_date;
+        std::string publisher;
+        std::string format;
+        int pagination;
+    };
+
 };
 
 void BookInventoryCoordinator::seed_inventory()
@@ -24,10 +29,12 @@ void BookInventoryCoordinator::seed_inventory()
     std::ifstream f("../books.json");
 
     json data = json::parse(f);
+
     // TODO: create book objects from JSON data
     // std::cout << data << std::endl;
     for (auto &element : data)
     {
+
         std::cout << element << '\n';
     }
 };
