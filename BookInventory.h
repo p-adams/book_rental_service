@@ -6,10 +6,10 @@
 class BookInventory
 {
 private:
-    std::vector<Book> books;
+    std::vector<Book *> books;
 
 public:
-    BookInventory(std::vector<Book> books);
+    BookInventory(std::vector<Book *> books);
     ~BookInventory();
 };
 

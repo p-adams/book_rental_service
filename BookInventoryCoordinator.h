@@ -53,13 +53,13 @@ namespace ns
 class BookInventoryCoordinator
 {
 private:
-    std::vector<Book> *books;
+    std::vector<Book *> books;
 
 public:
     BookInventoryCoordinator();
     void seed_inventory();
-    void set_books(std::vector<Book> *books);
-    std::vector<Book> *get_books();
+    void set_books(std::vector<Book *> books);
+    std::vector<Book *> get_books();
     ~BookInventoryCoordinator();
 };
 

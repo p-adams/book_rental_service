@@ -2,13 +2,13 @@
 #define Book_H
 #include <string>
 #include <vector>
-#include "Contributor.h"
+
 class Book
 {
 private:
-    std::vector<Contributor> authors;
-    std::vector<Contributor> translators;
-    std::vector<Contributor> editors;
+    std::vector<std::string> authors;
+    std::vector<std::string> translators;
+    std::vector<std::string> editors;
     std::string title;
     std::string edition;
     std::string pub_date;
@@ -17,18 +17,18 @@ private:
     int pagination;
 
 public:
-    Book(std::vector<Contributor> authors,
-         std::vector<Contributor> translators,
-         std::vector<Contributor> editors,
+    Book(std::vector<std::string> authors,
+         std::vector<std::string> translators,
+         std::vector<std::string> editors,
          std::string title,
          std::string edition,
          std::string pub_date,
          std::string publisher,
          int pagination);
     ~Book();
-    std::vector<Contributor> get_authors();
-    std::vector<Contributor> get_translators();
-    std::vector<Contributor> get_editors();
+    std::vector<std::string> get_authors();
+    std::vector<std::string> get_translators();
+    std::vector<std::string> get_editors();
     std::string get_title();
     std::string get_edition();
     std::string get_pub_date();

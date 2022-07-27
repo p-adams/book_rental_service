@@ -1,8 +1,9 @@
 #include "Book.h"
+#include <string>
 
-Book::Book(std::vector<Contributor> authors,
-           std::vector<Contributor> translators,
-           std::vector<Contributor> editors,
+Book::Book(std::vector<std::string> authors,
+           std::vector<std::string> translators,
+           std::vector<std::string> editors,
            std::string title,
            std::string edition,
            std::string pub_date,
@@ -20,17 +21,17 @@ Book::Book(std::vector<Contributor> authors,
     this->pagination = pagination;
 };
 
-std::vector<Contributor> Book::get_authors()
+std::vector<std::string> Book::get_authors()
 {
     return this->authors;
 }
 
-std::vector<Contributor> Book::get_translators()
+std::vector<std::string> Book::get_translators()
 {
     return this->translators;
 }
 
-std::vector<Contributor> Book::get_editors()
+std::vector<std::string> Book::get_editors()
 {
     return this->editors;
 }

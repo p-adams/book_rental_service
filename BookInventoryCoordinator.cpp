@@ -16,13 +16,21 @@ void BookInventoryCoordinator::seed_inventory()
     try
     {
         auto inventory = data.get<ns::inventory>();
-
         for (auto &el : inventory.books)
         {
-            std::cout << el.title << std::endl;
+            Book *book = new Book(
+                el.authors,
+                el.translators,
+                el.editors,
+                el.title,
+                el.edition,
+                el.pub_date,
+                el.publisher,
+                el.pagination);
+            this->books.push_back(book);
         }
 
-        //  std::cout << book << std::endl;
+        std::cout << "BOOKS: " << this->books.size() << std::endl;
     }
     catch (const std::exception &e)
     {
@@ -38,12 +46,12 @@ void BookInventoryCoordinator::seed_inventory()
     }
 };
 
-void BookInventoryCoordinator::set_books(std::vector<Book> *books)
+void BookInventoryCoordinator::set_books(std::vector<Book *> books)
 {
     this->books = books;
 };
 
-std::vector<Book> *BookInventoryCoordinator::get_books()
+std::vector<Book *> BookInventoryCoordinator::get_books()
 {
     return this->books;
 };
