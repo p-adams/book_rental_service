@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include(CTest)
 enable_testing()
 
-add_executable(book_rental_service main.cpp Auth.cpp Book.cpp BookInventory.cpp BookInventoryCoordinator.cpp)
+add_executable(book_rental_service main.cpp Auth.cpp Book.cpp BookInventory.cpp BookInventoryCoordinator.cpp Menu.cpp)
 
 
 
