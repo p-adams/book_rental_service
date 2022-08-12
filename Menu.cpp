@@ -1,8 +1,8 @@
-#include "menu.h"
+#include "Menu.h"
 #include <string>
 Menu::Menu(/* args */)
 {
-    std::string _options[3] = {"BROWSE", "SEARCH", "CART"};
+    std::string _options[4] = {"BROWSE", "SEARCH", "CART", "REGISTER"};
     for (auto &option : _options)
     {
 
@@ -13,6 +13,11 @@ Menu::Menu(/* args */)
 std::vector<std::string> Menu::get_options()
 {
     return this->options;
+}
+
+std::string Menu::get_option()
+{
+    return this->option;
 }
 
 Menu::~Menu()

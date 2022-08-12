@@ -1,6 +1,7 @@
 #ifndef AUTH_H
 #define AUTH_H
 #include <string>
+
 class Auth
 {
 private:
@@ -11,6 +12,7 @@ public:
     Auth();
     ~Auth();
     void check_status(std::string username, std::string password);
+    void get_credentials();
     void register_new();
     void login();
 };
