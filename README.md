@@ -4,6 +4,10 @@ Book rental service command line application
 
 ### Objectives
 
-- provide different user experiences based on whether or not user is admin
+- Command line and file I/O
 
-- work with JSON in C++
+- Objects in C++
+
+- JSON in C++
+
+- Provide different user experiences based on whether or not user is admin

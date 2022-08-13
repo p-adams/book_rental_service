@@ -12,6 +12,7 @@ public:
     Menu(/* args */);
     std::vector<std::string> get_options();
     std::string get_option();
+    void set_option(std::string option);
     ~Menu();
 };
 

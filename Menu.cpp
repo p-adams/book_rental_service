@@ -20,6 +20,11 @@ std::string Menu::get_option()
     return this->option;
 }
 
+void Menu::set_option(std::string option)
+{
+    this->option = option;
+}
+
 Menu::~Menu()
 {
 }

@@ -36,14 +36,6 @@ void BookInventoryCoordinator::seed_inventory()
     {
         std::cerr << e.what() << '\n';
     }
-
-    // TODO: create book objects from JSON data
-    // std::cout << data << std::endl;
-    for (auto &element : data)
-    {
-
-        // std::cout << element << '\n';
-    }
 };
 
 void BookInventoryCoordinator::set_books(std::vector<Book *> books)
