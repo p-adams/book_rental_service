@@ -26,6 +26,11 @@ void Auth::check_status(std::string username, std::string password)
     try
     {
         auto credentials = data.get<ns::credentials>();
+        if (credentials.username == this->username && credentials.password == this->password)
+        {
+            /*TODO:  handle login */
+            this->login();
+        }
     }
     catch (const std::exception &e)
     {
