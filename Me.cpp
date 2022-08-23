@@ -27,6 +27,16 @@ void Me::set_role(std::string role)
     this->role = role;
 }
 
+void Me::set_permissions(std::vector<std::string> permissions)
+{
+    this->permissions = permissions;
+}
+
+std::vector<std::string> Me::get_permissions()
+{
+    return this->permissions;
+}
+
 Me::~Me()
 {
 }

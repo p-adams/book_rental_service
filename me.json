@@ -1,0 +1,8 @@
+{
+  "me": {
+    "username": "admin",
+    "password": "admin",
+    "role": "ADMIN",
+    "permissions": ["create-user"]
+  }
+}

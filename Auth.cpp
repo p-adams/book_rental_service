@@ -6,13 +6,6 @@
 
 using namespace nlohmann;
 
-enum AuthType
-{
-    admin,
-    user,
-    guest
-};
-
 Auth::Auth()
 {
 }
@@ -21,12 +14,12 @@ void Auth::check_status(std::string username, std::string password)
 {
     this->username = username;
     this->password = password;
-    std::ifstream f("../creds.json");
+    std::ifstream f("../me.json");
     json data = json::parse(f);
     try
     {
-        auto credentials = data.get<ns::credentials>();
-        if (credentials.username == this->username && credentials.password == this->password)
+        auto me = data.get<ns::me>();
+        if (me.username == this->username && me.password == this->password)
         {
             /*TODO:  handle login */
             this->login();
