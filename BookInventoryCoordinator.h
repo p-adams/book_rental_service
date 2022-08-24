@@ -60,6 +60,8 @@ public:
     void seed_inventory();
     void set_books(std::vector<Book *> books);
     std::vector<Book *> get_books();
+    std::string search();
+    std::vector<Book *> browse();
     ~BookInventoryCoordinator();
 };
 
