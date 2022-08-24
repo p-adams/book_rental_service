@@ -10,4 +10,4 @@ Book rental service command line application
 
 - JSON in C++
 
-- Provide different user experiences based on whether or not user is admin
+- Roles and permissions
