@@ -12,17 +12,16 @@ Auth::Auth()
 
 void Auth::check_status(std::string username, std::string password)
 {
-    this->username = username;
-    this->password = password;
+
     std::ifstream f("../me.json");
     json data = json::parse(f);
     try
     {
         auto me = data.get<ns::me>();
-        if (me.username == this->username && me.password == this->password)
+        if (me.username == username && me.password == password)
         {
             /*TODO:  handle login */
-            this->login();
+            this->login(me);
         }
     }
     catch (const std::exception &e)
@@ -31,12 +30,12 @@ void Auth::check_status(std::string username, std::string password)
     }
 }
 
-void Auth::login()
+void Auth::login(ns::me me)
 {
     std::cout << "Login" << std::endl;
 };
 
-void Auth::register_new()
+void Auth::register_new(ns::me me)
 {
     std::cout << "Register" << std::endl;
 };
